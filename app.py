@@ -10,7 +10,7 @@ for index, item in enumerate(data):
 year = int(input("Pick a year to get movies made after that year."))
 for movies in data:
     if movies["year"] > year:
-        print(movies["title"], movies["year"])
+        print(movies["title"])
 
 
 
