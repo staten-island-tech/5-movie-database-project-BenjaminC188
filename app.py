@@ -8,15 +8,40 @@ data = json.load(movies)
     print(item["title"])"""
 
 year = 0
+yeartwo = 0
 movies = []
-while data["year"]:
+while data:
     year == input("Select a year to get all movies after that year")    
-    if data["year"] > year:
-        movies.append (data["title"])
+    yeartwo == data["year"]
+    if yeartwo > year:
+        movies.append(data("title"))
     print(movies)
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"""
 movies = []
 while data["year"]:
     years = (x, y)
@@ -45,6 +70,6 @@ def genre():
         if data["genre"] == genre:
             movies.append (data["title"])
             print(movies)
-
+"""
 
     
