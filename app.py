@@ -4,18 +4,13 @@ movies = open("./movies.json", encoding="utf8")
 ## create variable "data" that represents the enitre movie list
 data = json.load(movies)
 
-"""for index, item in enumerate(data):
-    print(item["title"])"""
+for index, item in enumerate(data):
+    print(item["title"])
 
-year = 0
-yeartwo = 0
-movies = []
-while data:
-    year == input("Select a year to get all movies after that year")    
-    yeartwo == data["year"]
-    if yeartwo > year:
-        movies.append(data("title"))
-    print(movies)
+year = int(input("Pick a year to get movies made after that year."))
+for movies in data:
+    if movies["year"] > year:
+        print(movies["title"], movies["year"])
 
 
 
