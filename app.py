@@ -30,7 +30,16 @@ def search():
     for movies in data:
         search = input("Name of the movie:")
         if search == movies["title"]:
-            return all
+
+
+"""def genre():
+    for movies in data:
+        search = input("Genre")
+        if search == movies["genres"]:
+            print(movies["title"])"""
+            
+        
+
 
 
 
