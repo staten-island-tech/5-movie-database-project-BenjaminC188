@@ -26,10 +26,24 @@ for movies in data:
 
 
 
+
+
+
+
 def search():
-    for movies in data:
-        search = input("Name of the movie:")
-        if search == movies["title"]:
+    movie = input("movie")
+for i in data:
+    if movie.lower() in i['title'].lower():
+        print(f"{i["title"].lower()} is here")
+    a += 1
+    if a == 0:
+        print("none")
+search()
+
+
+
+
+
 
 
 """def genre():
