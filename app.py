@@ -31,21 +31,22 @@ for movies in data:
 
 
 search = input("movie")
-search = search.lower
+search = search.lower()
 def search():
     for movies in data:
         if search.lower() in movies['title'].lower():
-            print(f"{movies["title"].lower()}")
-    a += 1
-    if a == 0:
-        print("none")
+            print(movies["title"])
+        else:
+            print("no movie")
 
-
-"""def genre():
+search = input("genre")
+search = search.lower()
+def genre():
     for movies in data:
-        search = input("Genre")
-        if search == movies["genres"]:
-            print(movies["title"])"""
+        if search.lower() in movies["genre"].lower():
+            print(movies["title"])
+        else:
+            print("no movies")
             
         
 
