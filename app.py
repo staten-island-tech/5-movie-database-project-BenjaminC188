@@ -24,24 +24,31 @@ for movies in data:
     if movies["year"] == year:
         print(movies["title"])"""
 
-search = input("movie")
-search = search.lower()
-def search():
-    for movies in data:
-        if search.lower() or search in movies['title']:
-            print(movies["title"])
-        else:
-            print("no movie")
-
-search = input("genre")
-search = search.lower()
+"""
+def movie():
+    search = input("movie").lower()
+    found = False
+    for movie in data:
+        if search in movie["title"].lower():
+            print(movie["title"])
+            found = True
+    if found == False:
+        print("No movie found.")
+movie()
+"""
+"""
 def genre():
-    for movies in data:
-        if search.lower() or search in movies["genre"]:
-            print(movies["title"])
-        else:
-            print("no movies")
-            
+    search = input("genre").lower()
+    found = False
+    for movie in data:
+        if search in movie["genre"].lower():
+            print(movie["title"])
+            found = True
+    if found == False:
+        print("No movies found in that genre.")
+genre()
+"""
+
         
 
 
