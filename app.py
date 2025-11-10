@@ -30,20 +30,15 @@ for movies in data:
 
 
 
+search = input("movie")
+search = search.lower
 def search():
-    movie = input("movie")
-for i in data:
-    if movie.lower() in i['title'].lower():
-        print(f"{i["title"].lower()} is here")
+    for movies in data:
+        if search.lower() in movies['title'].lower():
+            print(f"{movies["title"].lower()}")
     a += 1
     if a == 0:
         print("none")
-search()
-
-
-
-
-
 
 
 """def genre():
