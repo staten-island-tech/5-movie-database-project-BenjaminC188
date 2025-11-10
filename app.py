@@ -25,19 +25,19 @@ for movies in data:
         print(movies["title"])"""
 
 search = input("movie")
-search = search.lower
+search = search.lower()
 def search():
     for movies in data:
-        if search.lower() in movies['title'].lower():
+        if search.lower() or search in movies['title']:
             print(movies["title"])
         else:
             print("no movie")
 
 search = input("genre")
-search = search.lower
+search = search.lower()
 def genre():
     for movies in data:
-        if search.lower() in movies["genre"].lower():
+        if search.lower() or search in movies["genre"]:
             print(movies["title"])
         else:
             print("no movies")
