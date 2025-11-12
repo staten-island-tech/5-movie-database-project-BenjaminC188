@@ -27,27 +27,28 @@ for movies in data:
 """
 def movie():
     search = input("movie").lower()
-    found = False
+    movie = False
     for movie in data:
         if search in movie["title"].lower():
             print(movie["title"])
-            found = True
-    if found == False:
-        print("No movie found.")
+            movie = True
+    if movie == False:
+        print("no movie.")
 movie()
 """
-"""
+
+
 def genre():
     search = input("genre").lower()
-    found = False
+    movie = False
     for movie in data:
-        if search in movie["genre"].lower():
+        if search in movie["genres"].lower():
             print(movie["title"])
-            found = True
-    if found == False:
-        print("No movies found in that genre.")
+            movie = True
+    if movie == False:
+        print("no movies in that genre.")
 genre()
-"""
+
 
         
 
