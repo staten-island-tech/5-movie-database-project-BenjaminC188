@@ -39,10 +39,10 @@ movie()
 
 
 def genre():
-    search = input("genre")
+    search = input("genre").lower()
     genre = False
     for movie in data:
-        if search in movie["genres"]:
+        if search in movie["genres"].lower():
             print(movie["title"])
             genre = True
     if genre == False:
