@@ -48,7 +48,7 @@ def genre():
                 break
     if genre == False:
         print("no movies in that genre.")
-
+genre()
 
         
 
